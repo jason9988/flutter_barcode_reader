@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Toolbar
+    <TextView
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        app:navigationIcon="@mipmap/ic_back"
-        app:titleTextColor="@color/design_default_color_primary_dark"
-        app:title="扫描" />
+        android:layout_alignParentTop="true"
+        android:drawableStart="@mipmap/ic_back"
+        android:text="扫描" />
 
     <LinearLayout
         android:id="@+id/bottom_bar"
