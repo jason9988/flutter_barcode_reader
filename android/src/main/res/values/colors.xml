@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5365FF</color>
+    <color name="colorPrimaryDark">#5365FF</color>
+    <color name="colorAccent">#3F51B5</color>
+    <color name="colorNormal">#D7D7D7</color>
+    <color name="shape1">#5365FF</color>
+    <color name="shape2">#4499FF</color>
+    <color name="shape3">#3499FF</color>
+    <color name="white">#ffffff</color>
+    <color name="preview_mock">#9a000000</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_afff">#afff</color>
+    <color name="activity_color">#F6F7F9</color>
+    <color name="line_color">#EFEFEF</color>
+    <color name="transparent">#00000000</color>
+    <color name="shape10">#333499FF</color>
+    <color name="state_green">#437AF9</color>
+    <color name="state_gray">#9B9B9B</color>
+</resources>
