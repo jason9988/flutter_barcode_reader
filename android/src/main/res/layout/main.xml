@@ -72,8 +72,8 @@
             android:layout_weight="1"
             android:textColor="@android:color/black"
             android:imeOptions="actionDone"
-            android:inputType="number"
-            android:text="请输入" />
+            android:inputType="textNoSuggestions"
+            android:hint="请输入" />
 
     </LinearLayout>
 
