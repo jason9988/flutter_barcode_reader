@@ -1,4 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.yourcompany.barcodescanexample">
 
     <!-- The INTERNET permission is required for development. Specifically,
@@ -14,6 +15,8 @@
     <application
         android:name="io.flutter.app.FlutterApplication"
         android:label="barcode_scan_example"
+        android:appComponentFactory=""
+        tools:replace="android:appComponentFactory"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name="com.apptreesoftware.barcodescanexample.MainActivity"

@@ -8,22 +8,15 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.inputmethod.EditorInfo
-import androidx.appcompat.widget.AppCompatEditText
-import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.google.zxing.Result
 import com.yourcompany.barcodescan.R
+import kotlinx.android.synthetic.main.main.*
 import me.dm7.barcodescanner.zxing.ZXingScannerView
-
 
 class BarcodeScannerActivity : Activity(), ZXingScannerView.ResultHandler {
 
-    lateinit var scannerView: me.dm7.barcodescanner.zxing.ZXingScannerView
-    lateinit var dateTv: AppCompatTextView
-    lateinit var inputEtv: AppCompatEditText
-    lateinit var orderBtn: AppCompatTextView
-    lateinit var goodsBtn: AppCompatTextView
     var indexOfBtn = 0
 
     companion object {
@@ -36,14 +29,9 @@ class BarcodeScannerActivity : Activity(), ZXingScannerView.ResultHandler {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main)
-        title = ""
-//        scannerView = ZXingScannerView(this)
-        scannerView = findViewById<ZXingScannerView>(R.id.scannerView)
-        dateTv = findViewById<AppCompatTextView>(R.id.dateTv)
-        inputEtv = findViewById<AppCompatEditText>(R.id.inputEtv)
-        orderBtn = findViewById<AppCompatTextView>(R.id.orderBtn)
-        goodsBtn = findViewById<AppCompatTextView>(R.id.goodsBtn)
-
+        toolbar.setNavigationOnClickListener {
+            finish()
+        }
         scannerView.setAutoFocus(true)
         // this paramter will make your HUAWEI phone works great!
         scannerView.setAspectTolerance(0.5f)
